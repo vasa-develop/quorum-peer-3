@@ -12,10 +12,10 @@ echo "[*] Cleaning up temporary data directories"
 rm -rf qdata
 mkdir -p qdata/logs
 
-echo "[*] Configuring node 4 (permissioned)"
-mkdir -p qdata/dd4/{keystore,geth}
-cp permissioned-nodes.json qdata/dd4/static-nodes.json
-cp permissioned-nodes.json qdata/dd4/
-cp keys/key4 qdata/dd4/keystore
-cp raft/nodekey4 qdata/dd4/geth/nodekey
-geth --datadir qdata/dd4 init genesis.json
+echo "[*] Configuring node 7 (permissioned)"
+mkdir -p qdata/dd7/{keystore,geth}
+cp permissioned-nodes.json qdata/dd7/static-nodes.json
+cp permissioned-nodes.json qdata/dd7/
+cp keys/key7 qdata/dd7/keystore
+cp raft/nodekey7 qdata/dd7/geth/nodekey
+geth --datadir qdata/dd7 init genesis.json
